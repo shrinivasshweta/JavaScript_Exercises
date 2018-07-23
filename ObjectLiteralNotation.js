@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Create objects using the Literal Notation</p>
+<p id="demo">Display the result here.</p>
+
+<script>
+  
+  var girl = {
+  myProp: "Shweta Shrinivas",
+  myMethod: function() 
+  {return this.myProp;}
+}
+  document.getElementById("demo").innerHTML = girl.myMethod()+ " works in IBM";
+    
+</script>
+
+</body>
+</html>
