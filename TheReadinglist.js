@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p>Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).</p>
+
+<script>
+var books = [
+  {title: 'Harry Potter',
+   author: 'J.K.Rowling',
+   alreadyRead: true
+    },
+  {title: 'The vow',
+  author: 'Nicholas Sparks',
+  alreadyRead: false
+  }];
+
+for (var i = 0; i < books.length; i++) {
+  var book = books[i];
+  var bookInfo = book.title + '" by ' + book.author;
+  if (book.alreadyRead) {
+    console.log('You already read "' + bookInfo);
+  } else {
+    console.log('You still need to read "' + bookInfo);
+  }
+}
+</script>
+    </body>
+
+</html>
