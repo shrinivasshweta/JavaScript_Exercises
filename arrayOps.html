@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Array Operations</title>
+  </head>
+  <body>
+      <script>
+      
+      <p>arrays are objects. So both shoppingCart and fruits are the references to the same array.</p>
+      let fruits = ["Apples", "Pear", "Orange"];
+
+        // push a new value into the "copy"
+        let shoppingCart = fruits;
+        shoppingCart.push("Banana");
+
+        alert( fruits.length ); // 4
+/*
+     Create an array styles with items “Jazz” and “Blues”.
+Append “Rock-n-Roll” to the end.
+Replace the value in the middle by “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+Strip off the first value of the array and show it.
+Prepend Rap and Reggae to the array.*/
+
+        let styles = ["Jazz", "Blues"];
+        styles.push("Rock-n-Roll");
+        styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+        alert( styles.shift() );
+        styles.unshift("Rap", "Reggie");
+
+
+//Calling in an array context//
+
+        let arr = ["a", "b"];
+
+        arr.push(function() {
+        alert( this );
+        })
+
+        arr[2](); // "a","b",function
+
+
+
+  </script>
+</body>
+  </html>
